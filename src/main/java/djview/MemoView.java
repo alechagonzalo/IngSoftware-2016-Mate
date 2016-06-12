@@ -1,5 +1,3 @@
-import javafx.scene.text.TextAlignment;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
