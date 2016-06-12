@@ -1,8 +1,10 @@
 **Plan de manejo de las configuraciones (CM_Plan)**
 -------------------------------------------
-Grupo Mate - Ingeniería en Software - UNC
+Grupo Mate - Ingeniería en Software - UNC 
+
 Author(s): Bado, Ignacio – Alecha, Gonzalo
-Document Version: 1.0.0
+
+Document Version: 1.0.1
 
 ---------------------------------
 # Indice
@@ -52,17 +54,21 @@ En este plan, se definirán todos los pasos a seguir por los integrantes del pro
 | Travis CI   |Sistema de integración continua compatible con GitHub, utilizado para verificar el código fuente del proyecto automáticamente.| Enlazado automático con GitHub.                      |
 | IntelliJ IDE   |Plataforma de software compuesto por un conjunto de herramientas de programación de código abierto multiplataforma .| Uso de editor, compilador y depurador.                   |
 | TortoiseGit  |Software de control de revisiones basado en TortoiseSVN .| Uso de TortoiseGitMerge para comparar visualmente dos archivos y resolver conflictos.                    | 
+| MarkDown Pad2  | Software editor de MarkDown con todas las funciones para Windows| Uso de edición de texto y vista previa  | 
 ####1.2 Formas de acceso
 
 •	*Herramienta de gestión de versiones*  
+
 La herramienta de gestión de versiones  a  utilizar es GitHub. Para acceder al repositorio del proyecto se proporciona  el siguiente link :
 https://github.com/alechagonzalo/IngSoftware-2016-Mate
 
 •	*Herramienta de integración continua*
+
 Para la integración continua se utilizará Travis CI. Travis CI permite conectar tu repositorio de Github y probar después de cada push que hagas, regenerando el proyecto. Para acceder se lo hace mediante el siguiente enlace:
 https://travis-ci.org/alechagonzalo/IngSoftware-2016-Mate
 
 •	*Herramienta de gestión de defectos*
+
 Para la gestión de defectos se hará uso de la herramienta Issues que proporciona GitHub. A través de ella podemos solucionar conflictos de diversos tipos, generando un nuevo Issues para cada conflico, pudiendo etiquetar a cada uno con su correspondiente categoría. 
 Para acceder a la herramienta se proporciona el siguiente link:
 https://github.com/alechagonzalo/IngSoftware-2016-Mate/issues
@@ -118,6 +124,8 @@ El TCCB es un comité que asegura que cada cambio se considera adecuado por toda
 La CCB se reunirá ante cada solicitud de cambio de parte de los diferentes equipos del proyecto. Es obligatoria la presencia de cada uno de sus miembros para tomar las decisiones que se crean necesarias.
 
 ## 4. Esquema de Directorios ##
+
+![](http://fotos.subefotos.com/569dffc57c900fcf04d68eb02c77d483o.jpg)
 
 Para el esquema de la figura se debe respetar lo siguiente:
 
