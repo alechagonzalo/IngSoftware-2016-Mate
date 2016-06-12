@@ -12,15 +12,14 @@ Document Version: 1.0.0
 	- [1.2 Formas de acceso](#12-formas-de-acceso) 
 - [2. Roles de gestión de configuraciones](#2-roles-de-gestión-de-configuraciones)
 	- [2.1 Responsabilidades de gestión de configuraciones](#21-responsabilidades-de-gestión-de-configuraciones)
-	- [2.2. Responsabilidades](#22-responsabilidades)
 - [3. Gestión de cambios](#3-gestión-de-cambios)
-	- [3.1. Alcance](#31-alcance)
+	- [3.1 Alcance](#31-alcance)
 	- [3.2 Junta de control de cambios (TCCB)](#32-junta-de-control-de-cambios)
 		- [3.2.1 Miembros](#321-miembros)
-- [4. Esquema de Directorios](#4-esquema-de-directorios)
+- [4. Esquema de directorios](#4-esquema-de-directorios)
 - [5. Normas de etiquetado](#5-normas-de-etiquetado)
 - [6. Plan de esquemas de ramas a usar](#6-plan-de-esquemas-de-ramas-a-usar)
-	- [6.1 Politica de fusión](#61-politica-de-fusión)
+	- [6.1 Politica de fusión](#61-politica-de-fusion)
 - [7. Entrega de releases](#7-entrega-de-releases)
 
 --------------------------
@@ -82,20 +81,22 @@ La siguiente tabla muestra las personas que tendrán la función de administrado
 | Global PCM     | Gonzalo Alecha |Ignacio Bado                             |
 
 ####2.1 Responsabilidades de gestión de configuraciones
+
  *Global Proyect Configuration Manager  (GPCM)*
-•	Responsabilidad sobretodos los elementos de configuración.
-•	La responsabilidad de la creación de todas las ramas y la administración de sus políticas.
-•	Responsable de la aplicación de etiquetas en las principales ramas y releases.
-•	Garantizar la integridad del producto y la trazabilidad de los elementos de configuración para todo el proyecto.
-•	Coordinar las actividades de CM dentro del proyecto.
-•	Garantizar la correcta ejecución del esquema de CM.
-•	Ayudar en las actividades de combinación a la principal y liberar las ramas.
-•	Participar en las auditorías
+ 
+-	Responsabilidad sobretodos los elementos de configuración.
+-	La responsabilidad de la creación de todas las ramas y la administración de sus políticas.
+-	Responsable de la aplicación de etiquetas en las principales ramas y releases.
+-	Garantizar la integridad del producto y la trazabilidad de los elementos de configuración para todo el proyecto.
+-	Coordinar las actividades de CM dentro del proyecto.
+-	Garantizar la correcta ejecución del esquema de CM.
+-	Ayudar en las actividades de combinación a la principal y liberar las ramas.
+-	Participar en las auditorías
 
 *Equipo*
-•	Ayudar a resolver conflictos durante el proceso de combinación de ramas.
-•	Asegurarse de que los criterios de calidad de los releases cumplan.
-•	Seguir todos los procesos asociados, políticas y prácticas definidas por sus roles asignados.
+-	Ayudar a resolver conflictos durante el proceso de combinación de ramas.
+-	Asegurarse de que los criterios de calidad de los releases cumplan.
+-	Seguir todos los procesos asociados, políticas y prácticas definidas por sus roles asignados.
 
 
 3. Gestión de cambios
