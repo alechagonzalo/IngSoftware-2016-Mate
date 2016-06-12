@@ -16,10 +16,10 @@ Document Version: 1.0.0
 	- [3.1 Alcance](#31-alcance)
 	- [3.2 Junta de control de cambios (TCCB)](#32-junta-de-control-de-cambios)
 		- [3.2.1 Miembros](#321-miembros)
-- [4. Esquema de directorios](#4-esquema-de-directorios)
+- [4. Esquema de Directorios](#4-esquema-de-directorios)
 - [5. Normas de etiquetado](#5-normas-de-etiquetado)
 - [6. Plan de esquemas de ramas a usar](#6-plan-de-esquemas-de-ramas-a-usar)
-	- [6.1 Politica de fusión](#61-politica-de-fusion)
+	- [6.1 Políticas de fusión](#61-políticas-de-fusión)
 - [7. Entrega de releases](#7-entrega-de-releases)
 
 --------------------------
@@ -117,18 +117,18 @@ El TCCB es un comité que asegura que cada cambio se considera adecuado por toda
 
 La CCB se reunirá ante cada solicitud de cambio de parte de los diferentes equipos del proyecto. Es obligatoria la presencia de cada uno de sus miembros para tomar las decisiones que se crean necesarias.
 
-4.  Esquema de directorios
-----------------------
+## 4. Esquema de Directorios ##
 
 Para el esquema de la figura se debe respetar lo siguiente:
 
  - 	En la carpeta **src** se almacenará todo lo relacionado con el propio funcionamiento de la aplicación. 
 	 - En la carpeta denominada **main** se guardará el código fuente principal, y en las carpeta **test**, los relacionados con las pruebas unitarias. 
 	 Dentro de main estarán los archivos .java, los cuales deben comenzar en mayúscula y deben tener un significado que represente la identidad de la clase a la que pertenece.
- - Los documentos generados se guardaran dentro de una carpeta llamada **docs**y deben estar en formato Markdown. De ésta manera se podrá observar el historial de cambios sobre los documentos y quien realizó cada cambio. También  contendrá diagramas relacionados al proyecto.
 
- 5.  Normas de etiquetado
-----------------------
+- 	Los documentos generados se guardaran dentro de una carpeta llamada **docs** y deben estar en formato Markdown. De ésta manera 	se podrá observar el historial de cambios sobre los documentos y quien realizó cada cambio. También  contendrá diagramas relacionados al proyecto.
+
+## 5. Normas de etiquetado ##
+
 Para cada release se creará una etiqueta en GitHub. La nomenclatura a utilizar tendrá el siguiente patrón:
 
  - X.Y.Z , donde X inicia en 1 y aumentará cuando se realicen grandes cambios en la estructura del proyecto. Y se iniciará en 0, y aumentará a medida que se le agregan funcionalidades menores a una versión. Por ultimo, Z inicia en 0 y aumentará cuando se solucionen errores menores en una versión.
@@ -142,8 +142,7 @@ Por ejemplo, para que un desarrollador trabaje en un espacio aparte al principal
 
 ![](https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpt1/v/t34.0-12/13413852_10209993156649665_1703771823_n.jpg?oh=bedfa5944fe83feb55875b758cf23d80&oe=575FD9CC&__gda__=1465824084_a4e486d7832609ec3410ae54dd9da1da)
 
-
-####6.1 Política de fusión 
+#### 6.1 Políticas de fusión 
 La fusión de archivos o merge, se llevará a cabo cuando la funcionalidad desarrollada cumpla con los requisitos de un release, o cuando sea necesario incluir esta funcionalidad en la rama principal del proyecto.
 
 7. Entrega de releases
