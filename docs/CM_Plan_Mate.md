@@ -117,7 +117,7 @@ El TCCB es un comité que asegura que cada cambio se considera adecuado por toda
 La CCB se reunirá ante cada solicitud de cambio de parte de los diferentes equipos del proyecto. Es obligatoria la presencia de cada uno de sus miembros para tomar las decisiones que se crean necesarias.
 
 4.  Esquema de directorios
----------------------------------------------------
+----------------------
 
 Para el esquema de la figura se debe respetar lo siguiente:
 
@@ -127,17 +127,18 @@ Para el esquema de la figura se debe respetar lo siguiente:
  - Los documentos generados se guardaran dentro de una carpeta llamada **docs**y deben estar en formato Markdown. De ésta manera se podrá observar el historial de cambios sobre los documentos y quien realizó cada cambio. También  contendrá diagramas relacionados al proyecto.
 
  5.  Normas de etiquetado
-----------------------------------------------------
+----------------------
 Para cada release se creará una etiqueta en GitHub. La nomenclatura a utilizar tendrá el siguiente patrón:
 
  - X.Y.Z , donde X inicia en 1 y aumentará cuando se realicen grandes cambios en la estructura del proyecto. Y se iniciará en 0, y aumentará a medida que se le agregan funcionalidades menores a una versión. Por ultimo, Z inicia en 0 y aumentará cuando se solucionen errores menores en una versión.
 
 6. Plan de esquemas de ramas a usar
---------------------------------------------------------
+----------------------
 
 El proyecto comenzará sobre una rama principal llamada master. De ella surgirán las ramificaciones. 
 Para cada objetivo del proyecto se generará una nueva rama. El nombre de la rama generada deberá representar alguna característica del trabajo a realizar en la rama.
 Por ejemplo, para que un desarrollador trabaje en un espacio aparte al principal, puede crear una rama llamada “Desarrollo”.
+
 ![](https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpt1/v/t34.0-12/13413852_10209993156649665_1703771823_n.jpg?oh=bedfa5944fe83feb55875b758cf23d80&oe=575FD9CC&__gda__=1465824084_a4e486d7832609ec3410ae54dd9da1da)
 
 
