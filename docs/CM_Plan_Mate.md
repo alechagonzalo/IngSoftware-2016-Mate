@@ -26,7 +26,7 @@ Document Version: 1.0.0
 --------------------------
 
 
-<i class="icon-calendar"></i> Revisión Histórica
+Revisión Histórica
 -------------
 | Versión  | Fecha |Descripción                                        |
 |----------|-----|----------------------------------------------------|
@@ -37,14 +37,14 @@ Document Version: 1.0.0
 
 ------------
 
-<i class="icon-angle-right"></i> 1. Introducción
+1. Introducción
 ------------
 
  
 Este documento tiene objetivo cubrir el Plan de gestión de las configuraciones para el proyecto correspondiente al trabajo final de Ingenieria en Software. 
 En este plan, se definirán todos los pasos a seguir por los integrantes del proyecto como también se especificarán los elementos del proyecto que estarán bajo administración de configuraciones.
 
-####<i class="icon-wrench"></i>  1.1. Herramientas de Configuration Management
+####1.1. Herramientas de Configuration Management
 
 | Herramienta | 	Propósito	 |	Controles                                       |
 |-------------|---------------|----------------------------------------------------|
@@ -53,7 +53,7 @@ En este plan, se definirán todos los pasos a seguir por los integrantes del pro
 | Travis CI   |Sistema de integración continua compatible con GitHub, utilizado para verificar el código fuente del proyecto automáticamente.| Enlazado automático con GitHub.                      |
 | IntelliJ IDE   |Plataforma de software compuesto por un conjunto de herramientas de programación de código abierto multiplataforma .| Uso de editor, compilador y depurador.                   |
 | TortoiseGit  |Software de control de revisiones basado en TortoiseSVN .| Uso de TortoiseGitMerge para comparar visualmente dos archivos y resolver conflictos.                    | 
-####<i class="icon-search"></i> 1.2 Formas de acceso
+####1.2 Formas de acceso
 
 •	*Herramienta de gestión de versiones*  
 La herramienta de gestión de versiones  a  utilizar es GitHub. Para acceder al repositorio del proyecto se proporciona  el siguiente link :
@@ -69,7 +69,7 @@ Para acceder a la herramienta se proporciona el siguiente link:
 https://github.com/alechagonzalo/IngSoftware-2016-Mate/issues
 
 
- <i class="icon-cog"></i> 2. Roles de gestión de configuraciones
+2. Roles de gestión de configuraciones
 -------------------------------------
 
 Las actividades de gestión de configuraciones del proyecto serán coordinadas por el Global Proyect Configuration Manager  (GPCM). Este rol será asignado a una persona. Además se designará un respaldo para el GPCM.
@@ -81,9 +81,9 @@ La siguiente tabla muestra las personas que tendrán la función de administrado
 |----------|-----|----------------------------------------------------|
 | Global PCM     | Gonzalo Alecha |Ignacio Bado                             |
 
-####<i class="icon-cog-alt"></i> 2.1 Responsabilidades de gestión de configuraciones
+####2.1 Responsabilidades de gestión de configuraciones
  *Global Proyect Configuration Manager  (GPCM)*
- •	Responsabilidad sobretodos los elementos de configuración.
+•	Responsabilidad sobretodos los elementos de configuración.
 •	La responsabilidad de la creación de todas las ramas y la administración de sus políticas.
 •	Responsable de la aplicación de etiquetas en las principales ramas y releases.
 •	Garantizar la integridad del producto y la trazabilidad de los elementos de configuración para todo el proyecto.
@@ -98,16 +98,16 @@ La siguiente tabla muestra las personas que tendrán la función de administrado
 •	Seguir todos los procesos asociados, políticas y prácticas definidas por sus roles asignados.
 
 
-<i class="icon-pencil"></i>3. Gestión de cambios
+3. Gestión de cambios
 --------------------
 
-####<i class="icon-left"></i> 3.1 Alcance
+#### 3.1 Alcance
 La gestión de cambio es un proceso que ocurre después de identificar y aprobar la documentación, código fuente o hardware del producto de referencia. Los cambios incluyen cambios internos en el enfoque documentado original debido a la simulación o resultados de pruebas o peticiones externas de cambios en las características o funciones.
 
-#### <i class="icon-users"></i> 3.2 Junta de control de cambios
+####  3.2 Junta de control de cambios
 El TCCB es un comité que asegura que cada cambio se considera adecuado por todas las partes y está autorizado antes de su aplicación. El TCCB es responsable de aprobar, supervisar y controlar las solicitudes de cambio para establecer líneas de base de los elementos de configuración. El ámbito de trabajo será la de aprobar / rechazar los cambios necesarios en los planes, documentos y código. 
 
-##### <i class="icon-user"></i> 3.2.1 Miembros
+##### 3.2.1 Miembros
 
 | Rol  | Primario |Forma de contacto                              |
 |----------|-----|----------------------------------------------------|
@@ -116,7 +116,7 @@ El TCCB es un comité que asegura que cada cambio se considera adecuado por toda
 
 La CCB se reunirá ante cada solicitud de cambio de parte de los diferentes equipos del proyecto. Es obligatoria la presencia de cada uno de sus miembros para tomar las decisiones que se crean necesarias.
 
-<i class="icon-folder-open"></i> 4.  Esquema de directorios
+4.  Esquema de directorios
 ---------------------------------------------------
 
 Para el esquema de la figura se debe respetar lo siguiente:
@@ -126,13 +126,13 @@ Para el esquema de la figura se debe respetar lo siguiente:
 	 Dentro de main estarán los archivos .java, los cuales deben comenzar en mayúscula y deben tener un significado que represente la identidad de la clase a la que pertenece.
  - Los documentos generados se guardaran dentro de una carpeta llamada **docs**y deben estar en formato Markdown. De ésta manera se podrá observar el historial de cambios sobre los documentos y quien realizó cada cambio. También  contendrá diagramas relacionados al proyecto.
 
- <i class="icon-tags"></i> 5.  Normas de etiquetado
+ 5.  Normas de etiquetado
 ----------------------------------------------------
 Para cada release se creará una etiqueta en GitHub. La nomenclatura a utilizar tendrá el siguiente patrón:
 
  - X.Y.Z , donde X inicia en 1 y aumentará cuando se realicen grandes cambios en la estructura del proyecto. Y se iniciará en 0, y aumentará a medida que se le agregan funcionalidades menores a una versión. Por ultimo, Z inicia en 0 y aumentará cuando se solucionen errores menores en una versión.
 
-<i class="icon-fork"></i> 6. Plan de esquemas de ramas a usar
+6. Plan de esquemas de ramas a usar
 --------------------------------------------------------
 
 El proyecto comenzará sobre una rama principal llamada master. De ella surgirán las ramificaciones. 
