@@ -3,7 +3,12 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class DJView implements ActionListener,  BeatObserver, BPMObserver, DificultadObserverInterface {
-	Model model;
+
+    public static final String BEAT_MODEL = "BeatModel";
+    public static final String MEMO_MODEL = "MemoModel";
+    public static final String HEART_MODEL = "HeartModel";
+
+    Model model;
 	ControllerInterface controller;
     JFrame viewFrame;
     JPanel viewPanel;
@@ -20,6 +25,7 @@ public class DJView implements ActionListener,  BeatObserver, BPMObserver, Dific
     JMenu menu;
     JMenuItem startMenuItem;
     JMenuItem stopMenuItem;
+
 
 
     public MemoView createMemoView() {
@@ -43,10 +49,54 @@ public class DJView implements ActionListener,  BeatObserver, BPMObserver, Dific
         bpmOutputLabel = new JLabel("offline", SwingConstants.CENTER);
 		beatBar = new BeatBar();
 		beatBar.setValue(0);
-        JPanel bpmPanel = new JPanel(new GridLayout(2, 1));
+        JPanel bpmPanel = new JPanel(new GridLayout(3, 1));
 		bpmPanel.add(beatBar);
         bpmPanel.add(bpmOutputLabel);
+
+        //Agrego comboBox para elegir el modelo en tiempo de ejecucion
+        String [] tipoModelo = {BEAT_MODEL, HEART_MODEL, MEMO_MODEL};
+        JComboBox modelo = new JComboBox(tipoModelo);
+        if(model instanceof BeatModel)
+            modelo.setSelectedItem(BEAT_MODEL);
+        else
+            if(model instanceof MemoModel)
+                modelo.setSelectedItem(MEMO_MODEL);
+            else
+                modelo.setSelectedItem(HEART_MODEL);
+        modelo.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                JComboBox jComboBox = (JComboBox) e.getSource();
+
+                if(jComboBox.getSelectedItem() == MEMO_MODEL) {
+                    model.clearObservers();
+                    model = new MemoModel();
+                    model.registerObserver((DificultadObserverInterface) DJView.this);
+                    controller = new MemoController(model, DJView.this);
+                }
+                else
+                    if(jComboBox.getSelectedItem() == BEAT_MODEL){
+                        model.clearObservers();
+                        model = new BeatModel();
+                        model.registerObserver((BeatObserver) DJView.this);
+                        model.registerObserver((BPMObserver) DJView.this);
+                        controller = new BeatController(model,DJView.this);
+                    }
+                    else{
+                        model.clearObservers();
+                        model = new HeartModel();
+                        model.registerObserver((BeatObserver) DJView.this);
+                        model.registerObserver((BPMObserver) DJView.this);
+                        controller = new HeartController(model, DJView.this);
+                    }
+            }
+        });
+        bpmPanel.add(modelo);
+
         viewPanel.add(bpmPanel);
+
+
         viewFrame.getContentPane().add(viewPanel, BorderLayout.CENTER);
         viewFrame.pack();
         viewFrame.setVisible(true);

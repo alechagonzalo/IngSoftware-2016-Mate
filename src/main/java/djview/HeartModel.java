@@ -86,6 +86,12 @@ public class HeartModel extends Model implements Runnable {
 		}
 	}
 
+	@Override
+	public void clearObservers() {
+		beatObservers.clear();
+		bpmObservers.clear();
+	}
+
 	public void notifyBPMObservers() {
 		for(int i = 0; i < bpmObservers.size(); i++) {
 			BPMObserver observer = (BPMObserver)bpmObservers.get(i);

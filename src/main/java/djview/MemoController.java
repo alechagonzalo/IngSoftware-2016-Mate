@@ -20,6 +20,15 @@ public class MemoController implements ControllerInterface{
         botonera = view.createMemoView();
     }
 
+    public MemoController(Model model, DJView djView){
+        this.model = model;
+        view = djView;
+        view.disableStopMenuItem();
+        view.updateDificultad();
+        if(botonera == null)
+            botonera = view.createMemoView();
+    }
+
     @Override
     public void start() {
 
@@ -41,6 +50,8 @@ public class MemoController implements ControllerInterface{
     public void setBPM(int bpm) {
         model.setDificultad(bpm);
     }
+
+
 
     private void tiempo(int mili){
         Timer timer = new Timer();

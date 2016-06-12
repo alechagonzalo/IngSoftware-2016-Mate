@@ -13,6 +13,14 @@ public class BeatController implements ControllerInterface {
 		view.enableStartMenuItem();
 		model.initialize();
 	}
+
+    public BeatController(Model model, DJView djView) {
+        this.model = model;
+        view = djView;
+        view.disableStopMenuItem();
+        view.enableStartMenuItem();
+        model.initialize();
+    }
   
 	public void start() {
 		model.on();
@@ -39,4 +47,6 @@ public class BeatController implements ControllerInterface {
  	public void setBPM(int bpm) {
 		model.setBPM(bpm);
 	}
+
+
 }

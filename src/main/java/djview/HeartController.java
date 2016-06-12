@@ -12,6 +12,13 @@ public class HeartController implements ControllerInterface {
 		view.disableStopMenuItem();
 		view.disableStartMenuItem();
 	}
+
+	public HeartController(Model model, DJView djView) {
+		this.model = model;
+		view = djView;
+		view.disableStopMenuItem();
+		view.disableStartMenuItem();
+	}
   
 	public void start() {}
  
@@ -26,6 +33,8 @@ public class HeartController implements ControllerInterface {
 	public void decreaseBPM() {}
   
  	public void setBPM(int bpm) {}
+
+
 }
 
 

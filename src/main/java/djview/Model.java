@@ -86,4 +86,6 @@ public abstract class Model implements BeatModelInterface, MemoModelIterface, He
     public String getNombre(int dificultad){
         return "";
     }
+
+    abstract public void clearObservers();
 }

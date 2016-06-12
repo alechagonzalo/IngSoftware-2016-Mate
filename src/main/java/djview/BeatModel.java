@@ -86,8 +86,14 @@ public class BeatModel extends Model implements  MetaEventListener {
 		}
 	}
 
+	@Override
+	public void clearObservers() {
+		bpmObservers.clear();
+		beatObservers.clear();
+	}
 
-    public void meta(MetaMessage message) {
+
+	public void meta(MetaMessage message) {
 //        if (message.getType() == 47) {
 //			beatEvent();
 //        	sequencer.start();

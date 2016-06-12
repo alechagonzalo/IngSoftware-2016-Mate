@@ -55,6 +55,11 @@ public class MemoModel  extends Model{
         }
     }
 
+    @Override
+    public void clearObservers() {
+        dificultadObservers.clear();
+    }
+
 
     public int getDuracion(int level){
         switch(level){
