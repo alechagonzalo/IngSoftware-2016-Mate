@@ -54,7 +54,9 @@ En este plan, se definirán todos los pasos a seguir por los integrantes del pro
 | Travis CI   |Sistema de integración continua compatible con GitHub, utilizado para verificar el código fuente del proyecto automáticamente.| Enlazado automático con GitHub.                      |
 | IntelliJ IDE   |Plataforma de software compuesto por un conjunto de herramientas de programación de código abierto multiplataforma .| Uso de editor, compilador y depurador.                   |
 | TortoiseGit  |Software de control de revisiones basado en TortoiseSVN .| Uso de TortoiseGitMerge para comparar visualmente dos archivos y resolver conflictos.                    | 
-| MarkDown Pad2  | Software editor de MarkDown con todas las funciones para Windows| Uso de edición de texto y vista previa  | 
+| MarkDown Pad2  | Software editor de MarkDown con todas las funciones para Windows| Uso de edición de texto y vista previa  |
+| StarUML  | Herramienta para el modelamiento de software basado en los estándares UML (Unified Modeling Language) y MDA (Model Driven Arquitecture) | Diagramas de Actividades, Paquetes, Casos de Uso, Componentes, entre otros  | 
+
 ####1.2 Formas de acceso
 
 •	*Herramienta de gestión de versiones*  
