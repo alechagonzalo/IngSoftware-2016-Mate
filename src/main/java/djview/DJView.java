@@ -26,10 +26,16 @@ public class DJView implements ActionListener,  BeatObserver, BPMObserver, Dific
     JMenuItem startMenuItem;
     JMenuItem stopMenuItem;
 
+    MemoView memoView;
+
+    public MemoView getMemoView(){
+        return memoView;
+    }
 
 
-    public MemoView createMemoView() {
-        return new MemoView();
+    public void createMemoView() {
+        if(memoView == null)
+            memoView = new MemoView();
     }
 
     public DJView(ControllerInterface controller, Model model) {
@@ -38,6 +44,7 @@ public class DJView implements ActionListener,  BeatObserver, BPMObserver, Dific
 		model.registerObserver((BeatObserver)this);
 		model.registerObserver((BPMObserver)this);
         model.registerObserver((DificultadObserverInterface) this);
+        memoView = null;
     }
     
     public void createView() {

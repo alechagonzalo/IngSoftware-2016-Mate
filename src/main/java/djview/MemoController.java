@@ -17,16 +17,22 @@ public class MemoController implements ControllerInterface{
         view.createControls();
         view.disableStopMenuItem();
         view.updateDificultad();
-        botonera = view.createMemoView();
+        view.createMemoView();
+        botonera = view.getMemoView();
     }
 
     public MemoController(Model model, DJView djView){
         this.model = model;
         view = djView;
         view.disableStopMenuItem();
+        view.enableStartMenuItem();
         view.updateDificultad();
-        if(botonera == null)
-            botonera = view.createMemoView();
+
+        if(view.getMemoView() == null){
+            view.createMemoView();
+        }
+        botonera = view.getMemoView();
+
     }
 
     @Override
