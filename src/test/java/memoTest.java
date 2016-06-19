@@ -6,12 +6,11 @@ import static org.junit.Assert.assertEquals;
 
 public class memoTest{
 
-    private int variable;
     private MemoModel model;
     private MemoController controller;
 
     @Before
-    public void setUp(){
+    public void setUp()throws Exception{
 
         model = new MemoModel();
         controller = new MemoController(model);
