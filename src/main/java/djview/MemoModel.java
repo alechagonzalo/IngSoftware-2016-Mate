@@ -13,18 +13,20 @@ public class MemoModel  extends Model{
 
     private ArrayList<String> secuencias;
     private int dificultad;
-    private String secuencia;
+    int proximo;
 
 
     public MemoModel(){
         dificultadObservers = new ArrayList<>();
-        Random rand = new Random(32847);
+        Random rand = new Random(System.currentTimeMillis());
         secuencias = new ArrayList<>();
-        for(int i = 0; i < 10; i++){
-            secuencias.add(String.valueOf(rand.nextInt(100000)));
+        for(int i = 0; i < 50; i++){
+            int num = rand.nextInt(100000);
+            while(num < 10000) {num *= rand.nextInt(10);}
+            secuencias.add(String.valueOf(num));
         }
         dificultad = NORMAL;
-        secuencia = "";
+        proximo = 0;
 
     }
 
@@ -38,7 +40,17 @@ public class MemoModel  extends Model{
 
 
     public String getNextSecuence(){
-        return secuencias.get(new Random().nextInt(10));
+        if(proximo < secuencias.size()){
+            String salida = secuencias.get(proximo);
+            proximo++;
+            return salida;
+        }
+        else{
+            String salida = secuencias.get(0);
+            proximo = 1;
+            return salida;
+        }
+
     }
 
 
