@@ -20,7 +20,7 @@ public class MemoModel  extends Model{
         dificultadObservers = new ArrayList<>();
         Random rand = new Random(System.currentTimeMillis());
         secuencias = new ArrayList<>();
-        for(int i = 0; i < 15; i++){
+        for(int i = 0; i < 11; i++){
             int num = rand.nextInt(100000);
             while(num < 10000) {num *= rand.nextInt(10);}
             secuencias.add(String.valueOf(num));

@@ -4,9 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by ignacio on 19/06/16.
- */
+
 public class MemoModelTest {
 
     private MemoModel model;
