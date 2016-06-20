@@ -18,6 +18,7 @@ Document Version: 1.0.1
 	- [3.1 Alcance](#31-alcance)
 	- [3.2 Junta de control de cambios (TCCB)](#32-junta-de-control-de-cambios)
 		- [3.2.1 Miembros](#321-miembros)
+		- [3.2.1 Proceso de cambio](#322-proceso-de-cambio)
 - [4. Esquema de Directorios](#4-esquema-de-directorios)
 - [5. Normas de etiquetado](#5-normas-de-etiquetado)
 - [6. Plan de esquemas de ramas a usar](#6-plan-de-esquemas-de-ramas-a-usar)
@@ -125,6 +126,17 @@ El TCCB es un comité que asegura que cada cambio se considera adecuado por toda
 
 La CCB se reunirá ante cada solicitud de cambio de parte de los diferentes equipos del proyecto. Es obligatoria la presencia de cada uno de sus miembros para tomar las decisiones que se crean necesarias.
 
+##### 3.2.2 Proceso de cambio
+Ante una solicitud de cambio, la CCB evaluará los siguientes puntos:
+
+ - Consecuencias de no realizar el cambio
+ - Beneficios del cambio
+ - Cantidad de usuarios afectados por el cambio
+ - Costos de realizar el cambio
+ 
+ Si ante la evaluación de estos factores, la CCB cree conveniente realizar el cambio, este se llevará a cabo.
+ Además la CCB tendrá en cuenta sugerencias y retroalimentación por parte de los desarrolladores del proyecto y también del mismo cliente.
+
 ## 4. Esquema de Directorios ##
 
 ![](http://fotos.subefotos.com/569dffc57c900fcf04d68eb02c77d483o.jpg)
@@ -150,7 +162,7 @@ El proyecto comenzará sobre una rama principal llamada master. De ella surgirá
 Para cada objetivo del proyecto se generará una nueva rama. El nombre de la rama generada deberá representar alguna característica del trabajo a realizar en la rama.
 Por ejemplo, para que un desarrollador trabaje en un espacio aparte al principal, puede crear una rama llamada “Desarrollo”.
 
-![](https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpt1/v/t34.0-12/13413852_10209993156649665_1703771823_n.jpg?oh=bedfa5944fe83feb55875b758cf23d80&oe=575FD9CC&__gda__=1465824084_a4e486d7832609ec3410ae54dd9da1da)
+![](http://fotos.subefotos.com/6fa9a8248a5bd49ec74aa09f7edc6cefo.jpg)
 
 #### 6.1 Políticas de fusión 
 La fusión de archivos o merge, se llevará a cabo cuando la funcionalidad desarrollada cumpla con los requisitos de un release, o cuando sea necesario incluir esta funcionalidad en la rama principal del proyecto.
@@ -158,4 +170,4 @@ La fusión de archivos o merge, se llevará a cabo cuando la funcionalidad desar
 7. Entrega de releases
 ----------------------
 
-Cada reléase será entregado en formato ZIP, el cual tendrá un menú con instrucciones mínimas a seguir para poder instalarlo y usarlo.
+Cada reléase será entregado en formato ZIP, el cual contendrá los archivos necesarios para la ejecución del programa, junto con un documento que indicará la versión del programa y además tendrá un manual de instrucciones mínimas (en formato MD) para asegurar un uso del programa por parte del usuario.
