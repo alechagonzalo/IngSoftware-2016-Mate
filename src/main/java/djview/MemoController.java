@@ -9,8 +9,10 @@ public class MemoController implements ControllerInterface{
     private DJView view;
     private Model model;
     private MemoView botonera;
+    int puntaje;
 
     public MemoController(Model model){
+        puntaje = 0;
         this.model = model;
         view = new DJView(this, model);
         view.createView();
@@ -22,6 +24,7 @@ public class MemoController implements ControllerInterface{
     }
 
     public MemoController(Model model, DJView djView){
+        puntaje = 0;
         this.model = model;
         view = djView;
         view.disableStopMenuItem();
@@ -42,6 +45,7 @@ public class MemoController implements ControllerInterface{
         botonera.resetPulsacion();
         String secuencia = model.getNextSecuence();
 
+        botonera.setPuntajeLabel("puntaje: "+puntaje);
         botonera.setLabel(secuencia);
         botonera.activarBotones(false);
 
@@ -90,9 +94,12 @@ public class MemoController implements ControllerInterface{
                     botonera.setLabel("Acertaste!");
                     Toolkit toolkit = Toolkit.getDefaultToolkit();
                     toolkit.beep();
+                    puntaje ++;
+                    botonera.setPuntajeLabel("puntaje: "+puntaje);
                 }
                 else {
                     botonera.setLabel("Perdiste!");
+                    puntaje = 0;
                 }
 
                 botonera.activarBotones(false);

@@ -23,8 +23,10 @@ public class MemoView extends JFrame implements ActionListener{
     private JButton btnBorrar;
 
     private JLabel label;
+    private JLabel puntajeLabel;
 
     private String pulsacion;
+
 
 
     public MemoView() {
@@ -76,13 +78,18 @@ public class MemoView extends JFrame implements ActionListener{
         p3.add(btn8);
         p3.add(btn9);
 
-        p4.add(btn0);
+        JPanel labelPanel = new JPanel(new GridLayout(0,1));
 
         label = new JLabel("Bienvenido", SwingConstants.CENTER);
+        puntajeLabel = new JLabel("puntaje:0", SwingConstants.CENTER);
         Font font = new Font("nemeros grandes", NORMAL, 20);
         label.setFont(font);
+        puntajeLabel.setFont(font);
+        labelPanel.add(label);
+        labelPanel.add(puntajeLabel);
 
-        p4.add(label);
+        p4.add(btn0);
+        p4.add(labelPanel);
         p4.add(btnBorrar);
 
         container.setLayout(new BoxLayout(container, BoxLayout.Y_AXIS));
@@ -214,6 +221,10 @@ public class MemoView extends JFrame implements ActionListener{
 
     public void resetPulsacion(){
         pulsacion = "";
+    }
+
+    public void setPuntajeLabel(String p){
+        puntajeLabel.setText(p);
     }
 }
 

@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 /**
  * Created by ignacio on 20/06/16.
  */
-public class MemoControllerTest {
+public class MemoControllerTest{
 
     private MemoModel model;
     private MemoController controller;
