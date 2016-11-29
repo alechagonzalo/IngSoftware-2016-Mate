@@ -1,3 +1,7 @@
+package main.models.interfaces;
+
+import main.interfaces.DificultadObserverInterface;
+
 /**
  * Created by ignacio on 11/06/16.
  */

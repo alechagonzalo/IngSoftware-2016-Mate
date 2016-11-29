@@ -1,7 +1,7 @@
+import main.controllers.MemoController;
+import main.models.MemoModel;
 import org.junit.Before;
 import org.junit.Test;
-
-import javax.xml.bind.annotation.XmlAttribute;
 
 import static org.junit.Assert.*;
 

@@ -1,5 +1,5 @@
+package main.controllers.interfaces;
 
-  
 public interface ControllerInterface {
 	void start();
 	void stop();

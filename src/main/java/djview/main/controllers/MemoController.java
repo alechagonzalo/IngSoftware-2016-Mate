@@ -1,10 +1,17 @@
+package main.controllers;
+
+import main.views.DJView;
+import main.models.MemoModel;
+import main.views.MemoView;
+import main.models.Model;
+import main.controllers.interfaces.ControllerInterface;
 
 import java.awt.*;
 import java.util.Timer;
 import java.util.TimerTask;
 
 
-public class MemoController implements ControllerInterface{
+public class MemoController implements ControllerInterface {
 
     private DJView view;
     private Model model;

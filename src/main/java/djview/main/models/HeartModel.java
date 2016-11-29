@@ -1,4 +1,7 @@
+package main.models;
 
+import main.interfaces.BPMObserver;
+import main.interfaces.BeatObserver;
 
 import java.util.*;
 

@@ -1,6 +1,11 @@
+package main.models.interfaces;
 
-  
+
+import main.interfaces.BPMObserver;
+import main.interfaces.BeatObserver;
+
 public interface BeatModelInterface {
+
 	void initialize();
   
 	void on();

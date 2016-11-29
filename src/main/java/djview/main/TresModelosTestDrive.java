@@ -1,3 +1,14 @@
+package main;
+
+import main.controllers.BeatController;
+import main.controllers.HeartController;
+import main.controllers.MemoController;
+import main.controllers.interfaces.ControllerInterface;
+import main.models.BeatModel;
+import main.models.HeartModel;
+import main.models.MemoModel;
+import main.models.Model;
+
 /**
  * Created by ignacio on 12/06/16.
  */

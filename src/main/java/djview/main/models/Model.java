@@ -1,3 +1,12 @@
+package main.models;
+
+import main.interfaces.BPMObserver;
+import main.interfaces.BeatObserver;
+import main.interfaces.DificultadObserverInterface;
+import main.models.interfaces.BeatModelInterface;
+import main.models.interfaces.HeartModelInterface;
+import main.models.interfaces.MemoModelIterface;
+
 /**
  * Created by ignacio on 11/06/16.
  */

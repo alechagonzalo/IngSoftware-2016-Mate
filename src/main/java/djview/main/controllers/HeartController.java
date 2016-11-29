@@ -1,5 +1,10 @@
+package main.controllers;
 
-  
+import main.views.DJView;
+import main.models.HeartModel;
+import main.models.Model;
+import main.controllers.interfaces.ControllerInterface;
+
 public class HeartController implements ControllerInterface {
 	Model model;
 	DJView view;

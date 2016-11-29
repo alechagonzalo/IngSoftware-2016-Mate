@@ -1,12 +1,26 @@
+package main.views;
+
+import main.models.Model;
+import main.controllers.BeatController;
+import main.controllers.HeartController;
+import main.controllers.MemoController;
+import main.controllers.interfaces.ControllerInterface;
+import main.interfaces.BPMObserver;
+import main.interfaces.BeatObserver;
+import main.interfaces.DificultadObserverInterface;
+import main.models.BeatModel;
+import main.models.HeartModel;
+import main.models.MemoModel;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class DJView implements ActionListener,  BeatObserver, BPMObserver, DificultadObserverInterface {
+public class DJView implements ActionListener, BeatObserver, BPMObserver, DificultadObserverInterface {
 
-    public static final String BEAT_MODEL = "BeatModel";
-    public static final String MEMO_MODEL = "MemoModel";
-    public static final String HEART_MODEL = "HeartModel";
+    public static final String BEAT_MODEL = "main.models.BeatModel";
+    public static final String MEMO_MODEL = "main.models.MemoModel";
+    public static final String HEART_MODEL = "main.models.HeartModel";
 
     Model model;
 	ControllerInterface controller;

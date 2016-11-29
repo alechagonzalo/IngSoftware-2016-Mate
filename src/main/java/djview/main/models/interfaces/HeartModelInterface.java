@@ -1,4 +1,7 @@
+package main.models.interfaces;
 
+import main.interfaces.BPMObserver;
+import main.interfaces.BeatObserver;
 
 public interface HeartModelInterface  {
 	int getHeartRate();

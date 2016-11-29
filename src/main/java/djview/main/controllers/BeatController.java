@@ -1,5 +1,10 @@
+package main.controllers;
 
-  
+import main.views.DJView;
+import main.models.Model;
+import main.controllers.interfaces.ControllerInterface;
+import main.models.interfaces.BeatModelInterface;
+
 public class BeatController implements ControllerInterface {
 	BeatModelInterface model;
 	DJView view;

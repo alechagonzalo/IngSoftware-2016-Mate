@@ -1,8 +1,12 @@
+package main.models;
+
+import main.interfaces.DificultadObserverInterface;
+
 import java.util.ArrayList;
 import java.util.Random;
 
 
-public class MemoModel  extends Model{
+public class MemoModel  extends Model {
 
     public static final int FACIL = 1;
     public static final int NORMAL = 2;
